@@ -1,0 +1,1441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'tt-squares';
+    src: url('/fonts/tt-squares/TTSquares-Black.woff2') format('woff2'),
+         url('/fonts/tt-squares/TTSquares-Black.woff') format('woff'),
+         url('/fonts/tt-squares/TTSquares-Black.ttf') format('truetype');
+    font-weight: 900; /* Black */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'tt-squares';
+    src: url('/fonts/tt-squares/TTSquares-Bold.woff2') format('woff2'),
+         url('/fonts/tt-squares/TTSquares-Bold.woff') format('woff'),
+         url('/fonts/tt-squares/TTSquares-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'tt-squares';
+    src: url('/fonts/tt-squares/TTSquares-Regular.woff2') format('woff2'),
+         url('/fonts/tt-squares/TTSquares-Regular.woff') format('woff'),
+         url('/fonts/tt-squares/TTSquares-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'tt-squares';
+    src: url('/fonts/tt-squares/TTSquares-Light.woff2') format('woff2'),
+         url('/fonts/tt-squares/TTSquares-Light.woff') format('woff'),
+         url('/fonts/tt-squares/TTSquares-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+  }
+  
+/* General */
+body {
+  font-family: 'TT Squares', sans-serif;
+}
+.menu {
+    width: 100%;
+    font-family: 'TT Squares', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.menu-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.first-row {
+    height: 100px;
+    background-color: #1B3F8D;
+    color: white;
+}
+.second-row {
+    height: 50px;
+    background-color: #d3dce5;
+    color: #1B3F8D;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    width: 350px;
+    height: 40px;
+    padding: 0 10px;
+}
+.search-bar input {
+    border: none;
+    background: transparent;
+    color: white;
+    width: 100%;
+    outline: none;
+    font-family: 'TT Squares', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.search-bar .icon {
+    cursor: pointer;
+    color: white;
+}
+
+.search-bar:hover {
+    background-color: rgb(255, 255, 255);
+}
+.search-bar:hover input,
+.search-bar:hover .icon {
+    color: #1B3F8D;
+}
+
+/* Iconos */
+.icons .icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+}
+.icons a {
+  text-decoration: none;
+  outline: none;
+}
+.icons .icon :hover {
+    opacity: 0.6;
+}
+.icons .icon :active {
+    opacity: 1;
+}
+
+/* Botón de inicio de sesión */
+.btn.login-btn {
+    padding: 10px 40px;
+    background-color: white;
+    color: #1B3F8D;
+    border: none;
+    cursor: pointer;
+    font-family: 'TT Squares', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+.btn.login-btn:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: inset 0 0 0 2px #ffffff;
+}
+.btn.login-btn:active {
+    background-color: white;
+    color: #1B3F8D;
+}
+
+/* Segunda fila de botones */
+.second-row nav a {
+    margin-right: 30px;
+    color: #1B3F8D;
+    text-decoration: none;
+}
+.second-row nav a:hover {
+    opacity: 0.6;
+    text-decoration: underline;
+}
+.second-row nav a:active {
+    opacity: 1;
+}
+
+/* Iconos sociales */
+.social-icons a {
+  text-decoration: none;
+}
+.social-icons .icon {
+    margin-left: 15px;
+    color: #1B3F8D;
+}
+.social-icons .icon :hover {
+    opacity: 0.6;
+}
+.social-icons .icon :active {
+    opacity: 1;
+}
+
+/* Menú móvil */
+.mobile-header {
+    display: none;
+    background-color: #1B3F8D;
+    color: white;
+    padding: 5px 20px 0 20px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    color: #1B3F8D;
+    padding: 20px;
+    z-index: 10;
+    font-family: 'TT Squares', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    overflow-y: auto;  /* Permite scroll vertical */
+    scrollbar-width: none;    
+}
+.mobile-menu nav a {
+    display: block;
+    padding: 15px 0;
+    color: #1B3F8D;
+    text-decoration: none;
+}
+.mobile-menu nav a:active {
+    opacity: 0.6;
+    text-decoration: underline;
+}
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Botón de inicio de sesión */
+.btn.login-btn_2 {
+    padding: 10px 40px;
+    margin: 20px 0;
+    background-color: #1B3F8D;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-family: 'TT Squares', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+.btn.login-btn_2:active {
+    background-color: transparent;
+    color: #1B3F8D;
+    border: 2px solid  #1B3F8D;
+}
+
+
+
+
+/* Barra de búsqueda móvil */
+.mobile-search-bar {
+  display: none; /* Oculta inicialmente */
+  position: fixed;
+  top: 0; /* Debajo de la cabecera móvil */
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #1B3F8D;
+  z-index: 11; /* Por encima del menú móvil */
+  box-sizing: border-box;
+}
+
+.mobile-search-bar input {
+  width: calc(100% - 40px); /* Espacio para el botón de cerrar */
+  height: 40px;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  background-color: #fff;
+  color: #1B3F8D;
+  box-sizing: border-box;
+}
+
+.mobile-search-close {
+  position: absolute;
+  right: 20px;
+  top: 54%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.mobile-search-close img {
+  width: 19px;
+  height: 19px;
+}
+
+
+
+
+
+
+
+
+
+/* Sección Hero */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Contenedor de la imagen del hero */
+.hero-image {
+  width: 100%;
+  background-image: url('../images/Hero-1-off.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.hero-image::before {
+  content: "";
+  display: block;
+  padding-top: 42.25%; /* 9 / 16 = 56.25% */
+}
+
+/* Contenido del hero (texto y botón) en versión escritorio */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  text-align: right;
+}
+
+.hero h1 {
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #1B3F8D;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #1B3F8D;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.hero-button:hover {
+  background-color: transparent;
+  color: #1B3F8D;
+  box-shadow: inset 0 0 0 2px #1B3F8D;
+}
+
+.hero-button:focus {
+  background-color: #1B3F8D;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+/* Sección del carrusel */
+.carousel-section {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.carousel-title {
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 900;
+  font-size: 2.25rem;
+  color: #1B3F8D;
+  margin-bottom: 50px;
+}
+
+/* Contenedor principal */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Flechas de navegación */
+.carousel-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  width: 24px;
+  height: 24px;
+}
+
+.carousel-arrow:hover {
+  opacity: 0.6;
+}
+
+.carousel-arrow:active {
+  opacity: 1;
+}
+
+/* Contenedor del carrusel con overflow oculto */
+.carousel-wrapper {
+  overflow: hidden;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Carrusel con todas las cards */
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Cada grupo de 3 cards */
+.carousel-slide {
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: space-between;
+}
+
+/* Cards */
+.card {
+  width: 30%;
+  height: 280px;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Asegurar que la imagen dentro de la card esté centrada */
+.image-container {
+  width: 100%;
+  height: 200px; /* Ajusta según sea necesario */
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ajustar la imagen dentro de la card */
+.card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Evita que la imagen se deforme */
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img {
+  transform: scale(1.2);
+}
+
+.card:active .card-img {
+  transform: scale(1);
+}
+
+.carousel-slide .card-title {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.indicator {
+  width: 70px;
+  height: 8px;
+  background-color: transparent;
+  border: 2px solid #1B3F8D;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator:hover {
+  background-color: #1B3F8D;
+}
+
+.indicator:active {
+  background-color: transparent;
+}
+
+.indicator.active {
+  background-color: #1B3F8D;
+}
+
+
+
+/* Ocultar la sección móvil en escritorio */
+.mobile-card-section {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fullwidth-bg-section {
+  margin: 60px 0 60px 0;
+  width: 100%;
+  position: relative;
+  background: url('../images/paises_pc.jpg') center/cover no-repeat;
+}
+
+/* El pseudo-elemento asegura que el contenedor tenga una altura proporcional */
+.fullwidth-bg-section::before {
+  content: "";
+  display: block;
+  padding-top: 35.25%; /* 9 / 16 = 56.25% */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   Sección Herramientas Más Compradas
+=============================== */
+.herramientas-section_dos {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #F2F2F2;
+}
+
+/* Título */
+.herramientas-title_dos {
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 900;
+  font-size: 2.25rem;
+  color: #1B3F8D;
+  margin-bottom: 50px;
+}
+
+/* Contenedor de Cards: ancho 80% centrado para respetar 10% de margen */
+.cards-container_dos {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Cada Card (4 en fila) */
+.card_dos {
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  width: calc((100% - 60px) / 4); /* 4 cards y 3 gaps de 20px */
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.card_dos:hover {
+  box-shadow: 0 0 15px rgba(27, 63, 141, 1);
+}
+
+.card_dos:active {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.card_dos-image {
+  width: 70%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.card_dos-title {
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: black;
+}
+
+.card_dos-description {
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #717171;
+  padding: 10px 0;
+}
+
+.card_dos-price {
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: black;
+  padding-bottom: 10px;
+}
+.card_dos a{
+  text-decoration: none;
+}
+.card_dos-button {
+  background-color: rgba(27, 63, 141, 1);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.card_dos-button:hover {
+  opacity: 0.6;
+}
+
+.card_dos-button:active {
+  opacity: 1;
+}
+
+.card_dos-button img {
+  width: 18px;
+  margin-left: 5px;
+}
+
+/* ===============================
+   Botón "Ver todos"
+=============================== */
+.ver-todos-container_dos {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.ver-todos-btn_dos {
+  padding: 10px 40px;
+  background-color: #1B3F8D;
+  color: white;
+  border: none;
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Hover: trazo azul de 2px y texto azul, fondo transparente */
+.ver-todos-btn_dos:hover {
+  background-color: transparent;
+  color: #1B3F8D;
+  box-shadow: inset 0 0 0 2px #1B3F8D;
+}
+
+/* Focus (foco): vuelve al estado normal */
+.ver-todos-btn_dos:focus {
+  background-color: #1B3F8D;
+  color: white;
+}
+
+/* ===============================
+   Modal (Ventana Emergente) - Se adapta al estilo original
+=============================== */
+.modal_dos {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.modal-content_dos {
+  background: #000;
+  opacity: 0.8;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  width: 360px;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+.modal-icon_dos {
+  width: 45px;
+  margin-bottom: 20px;
+}
+
+.close-modal_dos {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.close-modal_dos img {
+  width: 18px;
+}
+
+.close-modal_dos:hover {
+  opacity: 0.6;
+}
+
+.close-modal_dos:active {
+  opacity: 1;
+}
+
+.modal-button_dos {
+  padding: 10px 40px;
+  background: white;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.modal-button_dos:hover {
+  background-color: transparent;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+.modal-button_dos:active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   Versión Escritorio
+=============================== */
+.bg-overlay-container {
+  position: relative;
+  width: 100%;
+}
+
+.fullwidth-bg-section2 {
+  width: 100%;
+  position: relative;
+  background: url('../images/empresa_foto.jpg') center/cover no-repeat;
+}
+
+.fullwidth-bg-section2::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* Relación de aspecto 16:9 */
+}
+
+.overlay-box {
+  position: absolute;
+  bottom: 10%; /* Posicionado en la parte inferior (ajustable) */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  background-color: #2D333C;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay-col {
+  width: 50%;
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.overlay-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ===============================
+   Versión Móvil
+=============================== */
+.mobile-overlay-section {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #2D333C;
+  padding: 50px 10%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Permite alinear verticalmente según contenido */
+  flex-wrap: nowrap; /* Mantiene las columnas en una sola fila */
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 20px;
+  min-width: 100px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centra verticalmente el logo */
+  text-align: center;
+}
+
+.footer-column h3 {
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+  color: white;
+}
+.footer-column p {
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+.footer-column a {
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+}
+
+.footer-column a:active {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer-column .social-icons_footer {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons_footer .icon {
+  font-size: 24px;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons_footer .icon:hover {
+  opacity: 0.6;
+}
+
+.social-icons_footer .icon:active {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* BOTÓN FLOTANTE - FIJO */
+.boton_regreso {
+  position: fixed;
+  right: 20px;
+  bottom: 35px;
+  background-color: #1B3F8D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.boton_regreso-icono {
+  width: 18px; /* Icono versión escritorio */
+  height: 18px;
+  margin: 10px;
+  transition: filter 0.3s ease;
+}
+
+.boton_regreso:hover {
+  opacity: 0.6;
+}
+
+/* FOCUS: Volver al estado normal */
+.boton_regreso:active {
+opacity: 1;
+}
+
+
+  
+  
+/* Responsive */
+/* Reducir el tamaño del logo en la versión móvil */
+@media (max-width: 1050px) {
+    /* Css menú */
+    .menu {
+      
+      display: none;
+  }
+  .mobile-header {
+      display: flex;
+  }
+  .mobile-header .logo img {
+      height: 30px; /* Ajuste de tamaño para versión móvil */
+  }
+  .mobile-menu nav a:active {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .social-icons .icon :hover {
+    opacity: 1;
+  }
+  .mobile-header .search-toggle img{
+    width: 21px;
+  }
+
+
+
+
+
+
+
+
+  .hero-image {
+    background-image: url('../images/Hero-1-off_movil.jpg');
+  }
+  .hero-image::before {
+    content: "";
+    display: block;
+    padding-top: 65.25%; /* 9 / 16 = 56.25% */
+  }
+  .hero-content {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero-button {
+    font-size: 0.75rem;
+  }
+  .hero-button:hover {
+    background-color: #1B3F8D;
+    color: #ffffff;
+    box-shadow: none;
+  }
+  .hero-button:focus {
+    background-color: #1B3F8D;
+    color: #ffffff;
+  }
+
+
+
+
+
+
+
+      
+
+/* .carousel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.carousel-wrapper {
+    display: block;
+    width: 100%;
+}
+
+.carousel {
+    display: block;
+    width: 100%;
+} */
+/* Sección móvil */
+.mobile-cards {
+  display: grid; 
+  gap: 20px;
+  margin: 0 20px;
+  /* Para pantallas entre 1050px y 400px, se muestran 2 columnas */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mobile-card {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Ajustes de imagen */
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.card-img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+/* ❌ Ocultar las flechas y los indicadores en la versión móvil */
+.carousel-arrow,
+.carousel-indicators {
+    display: none;
+}
+
+.carousel-title {
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 900;
+  font-size: 1.125rem;
+  color: #1B3F8D;
+  text-align: center;
+  margin: 80px 20px 30px 20px;
+}
+.carousel-section {
+  display: none;
+}
+.mobile-card-section {
+  display: block;
+}
+.mobile-card a{
+  text-decoration: none;
+  color: inherit;
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 700;
+  font-size: 0.65rem;
+  color: #000;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+.fullwidth-bg-section {
+  margin: 50px 0 90px 0;
+  width: 100%;
+  position: relative;
+  background: url('../images/paises_pc.jpg') center/cover no-repeat;
+}
+
+/* El pseudo-elemento asegura que el contenedor tenga una altura proporcional */
+.fullwidth-bg-section::before {
+  content: "";
+  display: block;
+  padding-top: 35.25%; /* 9 / 16 = 56.25% */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cards-container_dos {
+  width: calc(100% - 40px); /* Resta 20px de cada lado para respetar el margen */
+  max-width: 1200px;
+  margin: 0 auto; /* Centra el contenedor */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las cards */
+  gap: 20px;
+}
+.herramientas-title_dos {
+  font-size: 1.125rem;
+  margin-bottom: 30px;
+  margin: 0 20px 30px 20px;
+}
+.cards-container_dos {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card_dos {
+  width: calc(50% - 10px); /* Asegura que dos cards entren en una fila */
+  max-width: 100%; /* Evita que sean demasiado grandes */
+}
+.card_dos-title,
+.card_dos-description,
+.card_dos-price,
+.card_dos-button,
+.ver-todos-btn_dos {
+  font-size: 0.75rem;
+}
+.card_dos:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card_dos:active {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.card_dos-button:hover {
+  opacity: 1;
+}
+/* Hover: trazo azul de 2px y texto azul, fondo transparente */
+.ver-todos-btn_dos:hover {
+  background-color: #1B3F8D;
+  color: white;
+  border: none;
+}
+
+/* Focus (foco): vuelve al estado normal */
+.ver-todos-btn_dos:focus {
+  background-color: #1B3F8D;
+  color: white;
+  border: none;
+}
+.close-modal_dos:hover {
+  opacity: 1;
+}
+
+.close-modal_dos:active {
+  opacity: 1;
+}
+
+.modal-button_dos:hover {
+  background: white;
+  color: #000;
+  border: none;
+}
+
+.modal-button_dos:active {
+  background: white;
+  color: #000;
+  border: none;
+}
+.close-modal_dos img {
+  width: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.overlay-box {
+  display: none;
+}
+.mobile-overlay-section {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #2D333C;
+  text-align: center;
+}
+
+.mobile-overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-overlay-image img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.mobile-overlay-text p {
+  font-family: 'TT Squares', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #ffffff;
+  margin: 20px 0 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Footer móvil */
+ .footer {
+  padding: 50px 20px 5px 20px;
+}
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+}
+.footer-column h3 {
+  font-size: 0.75rem;
+}
+.footer-column p {
+  font-size: 0.75rem;
+}
+.footer-column a {
+  font-size: 0.75rem;
+}
+
+.footer-column {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer-column a:hover {
+    text-decoration: none;
+    opacity: 1; /* Igual al estado normal */
+}
+.social-icons_footer {
+  justify-content: center;
+  align-items: center;
+}
+.social-icons_footer .icon {
+    font-size: 20px;
+}
+.social-icons_footer .icon:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+.boton_regreso {
+  width: 30px;
+  height: 30px;
+}
+
+.boton_regreso-icono {
+  width: 18px;
+  height: 18px;
+}
+.boton_regreso:hover {
+opacity: 1;
+}
+
+/* FOCUS: Volver al estado normal */
+.boton_regreso:active {
+opacity: 1;
+}
+}
+
+
+
+
+@media (max-width: 400px) {
+
+
+
+
+  .fullwidth-bg-section {
+    min-height: 750px; /* Altura mínima para asegurar visibilidad si no hay contenido */
+    background-image: url('../images/paises_movil.jpeg'); /* Imagen de fondo para móvil */
+  }
+
+
+
+
+
+
+
+  .mobile-cards {
+    grid-template-columns: 1fr;
+  }
+
+
+
+
+
+
+
+
+  .card_dos {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
