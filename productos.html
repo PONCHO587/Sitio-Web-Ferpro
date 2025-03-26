@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías de Productos</title>
+    <link rel="icon" type="image/svg" href="./images/favicon.svg">
+    <link rel="stylesheet" href="./stylesheets/productos.css">
+</head>
+<body>
+
+    <!-- Menú de escritorio -->
+    <header class="menu">
+        <!-- Primera fila -->
+        <div class="menu-row first-row">
+            <div class="logo">
+                <img src="./images/Logo.svg" height="45px" alt="">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar..." id="search-input">
+                <span id="search-icon" class="icon">
+                    <img src="./images/Lupa blanca.svg" alt="">
+                </span>
+            </div>
+            <div class="icons">
+                <a href="./favoritos.html">
+                    <span class="icon heart">
+                        <img src="./images/Corazon blanco.svg" alt="">
+                    </span>
+                </a>
+                <a href="./carrito.html">
+                    <span class="icon cart">
+                        <img src="./images/Carrito blanco.svg" alt="">
+                    </span>
+                </a>
+                <a href="./perfil.html">
+                    <span class="icon login">
+                        <img src="./images/Loging blanco.svg" alt="">
+                    </span>
+                </a>
+            </div>
+            <a href="./inicio_sesion.html">
+                <button class="btn login-btn">Iniciar Sesión</button>
+            </a>
+        </div>
+
+        <!-- Segunda fila -->
+        <div class="menu-row second-row">
+            <nav>
+                <a href="./index.html">Inicio</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./servicios.html">Servicios</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./contactanos.html">Contáctanos</a>
+            </nav>
+            <div class="social-icons">
+                <span class="icon whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=%2B59175855677&context=ARB_dfxMsqVhh3XzlwUVGqMzL0pU7gFqu9ltVPziCmued-znlYnOoaSTc32muw8w80Zx-iiu3slAgMUH8cbTHE27xGoooLdnKWn3w-uojBkffZf8MAZNaI4XokEi8jy_6M8ow_5yb9heoKTXtHad1gCaPg&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawIcRgpleHRuA2FlbQIxMAABHXzoV6y57XjXxgoqEhAn0xRcW8z6prmbOU5Y1iLYRrH6L9vkk08MPEQqPA_aem_Ars4Fah451e_x6w5Bk8niw">
+                        <img src="./images/Whatsapp azul.svg" alt="">
+                    </a>
+                </span>
+                <span class="icon instagram">
+                    <a href="https://www.instagram.com/ferprobolivia/?hl=es">
+                        <img src="./images/Instagram azul.svg" alt="">
+                    </a>
+                </span>
+                <span class="icon facebook">
+                    <a href="https://www.facebook.com/Ferprobolivia">
+                        <img src="./images/Facebook azul.svg" alt="">
+                    </a>
+                </span>
+                <span class="icon location">
+                    <a href="https://www.google.com/maps/place/FERPRO+BOLIVIA/@-16.4985992,-68.142266,17z/data=!3m1!4b1!4m6!3m5!1s0x915f21821d214a49:0x2abf1b89a032e382!8m2!3d-16.4985992!4d-68.1396911!16s%2Fg%2F11flskx523?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="./images/Ubicación.svg" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú responsive móvil -->
+    <div class="mobile-header">
+        <span class="menu-toggle" id="menu-toggle">
+            <img src="./images/Menú.svg" alt="">
+        </span>
+        <div class="logo">
+            <img src="./images/Logo.svg" alt="">
+        </div>
+        <span class="search-toggle" id="search-toggle">
+            <img src="./images/Lupa blanca.svg" alt="">
+        </span>
+    </div>
+    <!-- Barra de búsqueda móvil (oculta inicialmente) -->
+<div class="mobile-search-bar" id="mobile-search-bar">
+    <input type="text" placeholder="Buscar..." id="mobile-search-input">
+    <span id="mobile-search-close" class="mobile-search-close">
+      <img src="./images/X blanco.svg" alt="Cerrar búsqueda">
+    </span>
+  </div>
+  
+
+    <div class="mobile-menu" id="mobile-menu">
+        <span class="close-menu" id="close-menu">
+            <img src="./images/X azul.svg" alt="">
+        </span>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contactanos.html">Contáctanos</a>
+            <a href="./carrito.html"><img src="./images/Carrito azul.svg" alt="">    Carrito de Compras</a>
+            <a href="./favoritos.html"><img src="./images/Corazon azul.svg" alt="">    Favoritos</a>
+            <a href="./perfil.html">Mi Cuenta</a>
+            <a href="./pedidos.html">Mis Pedidos</a>
+            <a href="./inicio_sesion.html">Cerrar Sesión</a>
+        </nav>
+        <a href="./inicio_sesion.html">
+            <button class="btn login-btn_2">Iniciar Sesión</button>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Migas de pan -->
+<div class="breadcrumbs">
+    <nav>
+        <h3 class="breadcrumb-item"><a href="./index.html">&gt; Inicio</a></h3>
+        <h3 class="breadcrumb-item breadcrumb-active"><a href="">&gt; Categorías de Productos</a></h3>
+    </nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="titulo"><h2>Categorías de Productos</h2></div>
+    <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <a href="./cat_1.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/1.jpeg" alt="Image 1" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE SUJECIÓN</h3>
+            </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <a href="./cat_2.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/2.jpeg" alt="Image 2" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE MECÁNICA</h3>
+            </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <a href="./cat_3.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/3.jpeg" alt="Image 3" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE FIJACIÓN</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./cat_4.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/4.jpeg" alt="Image 3" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE IMPACTO</h3>
+            </a>
+        </div>
+          <!-- Card 1 -->
+          <div class="card">
+            <a href="./cat_5.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/5.jpeg" alt="Image 1" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE CORTE</h3>
+            </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <a href="./cat_6.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/6.jpeg" alt="Image 2" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE ACABADO</h3>
+            </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <a href="./cat_7.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/7.jpeg" alt="Image 3" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE PLOMERÍA</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./cat_8.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/8.jpeg" alt="Image 3" class="card-img">
+                </div>
+                <h3 class="card-title">H. DE PINTURA Y ALBAÑILERIA</h3>
+            </a>
+        </div>
+          <!-- Card 1 -->
+          <div class="card">
+            <a href="./cat_9.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/9.jpeg" alt="Image 1" class="card-img">
+                </div>
+                <h3 class="card-title">E. DE PROTECCIÓN PERSONAL</h3>
+            </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <a href="./cat_10.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/10.jpeg" alt="Image 2" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE MEDICIÓN</h3>
+            </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <a href="./cat_11.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/11.jpeg" alt="Image 3" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS ELÉCTRICAS</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./cat_12.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/12.jpeg" alt="Image 3" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS AISLADAS</h3>
+            </a>
+        </div>
+          <!-- Card 1 -->
+          <div class="card">
+            <a href="./cat_13.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/13.jpeg" alt="Image 1" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE SOLDADURA</h3>
+            </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <a href="./cat_14.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/14.jpeg" alt="Image 2" class="card-img">
+                </div>
+                <h3 class="card-title">HARDWARE Y OTROS</h3>
+            </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <a href="./cat_15.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/15.jpeg" alt="Image 3" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE AUTOMÓVIL</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./cat_16.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/16.jpeg" alt="Image 3" class="card-img">
+                </div>
+                <h3 class="card-title">ACCESORIOS DE HERRAMIENTAS ELÉCTRICAS</h3>
+            </a>
+        </div>
+          <!-- Card 1 -->
+          <div class="card">
+            <a href="./cat_17.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/17.jpeg" alt="Image 1" class="card-img">
+                </div>
+                <h3 class="card-title">MÁQUINAS ELÉCTRICAS</h3>
+            </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <a href="./cat_18.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/18.jpeg" alt="Image 2" class="card-img">
+                </div>
+                <h3 class="card-title">GENERADORES</h3>
+            </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <a href="./cat_19.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/19.jpeg" alt="Image 3" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE ILUMINACIÓN</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./cat_20.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/20.jpeg" alt="Image 3" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS NEUMÁTICAS</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./cat_21.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/21.jpeg" alt="Image 3" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE JARDINERÍA</h3>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Columna 1: Logo -->
+            <div class="footer-column footer-logo">
+                <div class="logo"><img src="./images/Logo.svg" alt=""></div>
+            </div>
+    
+            <!-- Columna 2: Dirección -->
+            <div class="footer-column">
+                <h3>DIRECCIÓN - LA PAZ - BOLIVIA</h3>
+                <a href="https://www.google.com/maps/place/FERPRO+BOLIVIA/@-16.4985992,-68.142266,17z/data=!3m1!4b1!4m6!3m5!1s0x915f21821d214a49:0x2abf1b89a032e382!8m2!3d-16.4985992!4d-68.1396911!16s%2Fg%2F11flskx523?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">Isaac Tamayo, esquina Sagarnaga N° 440.</a>
+                <a href="https://www.google.com/maps/place/FERPRO+SUC+CALACOTO/@-16.5386615,-68.0759644,17z/data=!3m1!4b1!4m6!3m5!1s0x915f2195cca8ccc1:0x597733fa149b222c!8m2!3d-16.5386615!4d-68.0733895!16s%2Fg%2F11w3ms8crt?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">Calle Prolongación Ballivián entre 24 y 25 de Calacoto N° 1780.</a>
+            </div>
+    
+            <!-- Columna 3: Horarios -->
+            <div class="footer-column">
+                <h3>HORARIOS DE ATENCIÓN</h3>
+                <p>Lunes a Viernes: 07:00am - 19:00pm</p>
+                <p>Sábados: 07:00am - 17:00pm</p>
+                <p>Domingos: Cerrado</p>
+            </div>
+    
+            <!-- Columna 4: Redes sociales -->
+            <div class="footer-column">
+                <h3>ENCUÉNTRANOS EN</h3>
+                <div class="social-icons_footer">
+                    <a href="https://www.instagram.com/ferprobolivia/?hl=es" class="icon">
+                        <img src="./images/Instagram blanco.svg" alt="">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=%2B59175855677&context=ARBpb9Xwp5_bV6Y7t1YTJjxB5lqlfi8gEa_mHw11ySIlVI69ozgwRi2NKFpZHTrGMxisqIkyBixEijRYkP3wj9uF3qHSeO7Kz04pJANsrE6zKieKfxv9U9HMlUs4GuEjPoetBd12Ycoo0je412B1BrV6_g&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawIcUDVleHRuA2FlbQIxMAABHWlhMhRQLdx8C7kH-u3Sf6DwNXk9rf34yClDsjSOQ0j47mqMRdPVyBW9VQ_aem_BHcYx3rsX6bW71CE2FB8Kw" class="icon"><img src="./images/Whatsapp blanco.svg" alt=""></a>
+                    <a href="https://www.facebook.com/Ferprobolivia" class="icon"><img src="./images/Facebook blanco.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <section>
+        <!-- BOTÓN FLOTANTE FIJO (SCROLL TOP) -->
+        <div class="boton_regreso" id="botonRegreso">
+            <img src="./images/flecha_arriba.svg" alt="Icono de regreso" class="boton_regreso-icono">
+        </div>
+    </section>
+
+
+
+    <script src="./scripts/productos.js"></script>
+</body>
+</html>

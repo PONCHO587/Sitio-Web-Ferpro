@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/svg" href="./images/favicon.svg">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+</head>
+<body>
+
+    <!-- Menú de escritorio -->
+    <header class="menu">
+        <!-- Primera fila -->
+        <div class="menu-row first-row">
+            <div class="logo">
+                <img src="./images/Logo.svg" height="45px" alt="">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar..." id="search-input">
+                <span id="search-icon" class="icon">
+                    <img src="./images/Lupa blanca.svg" alt="">
+                </span>
+            </div>
+            <div class="icons">
+                <a href="./favoritos.html">
+                    <span class="icon heart">
+                        <img src="./images/Corazon blanco.svg" alt="">
+                    </span>
+                </a>
+                <a href="./carrito.html">
+                    <span class="icon cart">
+                        <img src="./images/Carrito blanco.svg" alt="">
+                    </span>
+                </a>
+                <a href="./perfil.html">
+                    <span class="icon login">
+                        <img src="./images/Loging blanco.svg" alt="">
+                    </span>
+                </a>
+            </div>
+            <a href="./inicio_sesion.html">
+                <button class="btn login-btn">Iniciar Sesión</button>
+            </a>
+        </div>
+
+        <!-- Segunda fila -->
+        <div class="menu-row second-row">
+            <nav>
+                <a href="./index.html">Inicio</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./servicios.html">Servicios</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./contactanos.html">Contáctanos</a>
+            </nav>
+            <div class="social-icons">
+                <span class="icon whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=%2B59175855677&context=ARB_dfxMsqVhh3XzlwUVGqMzL0pU7gFqu9ltVPziCmued-znlYnOoaSTc32muw8w80Zx-iiu3slAgMUH8cbTHE27xGoooLdnKWn3w-uojBkffZf8MAZNaI4XokEi8jy_6M8ow_5yb9heoKTXtHad1gCaPg&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawIcRgpleHRuA2FlbQIxMAABHXzoV6y57XjXxgoqEhAn0xRcW8z6prmbOU5Y1iLYRrH6L9vkk08MPEQqPA_aem_Ars4Fah451e_x6w5Bk8niw">
+                        <img src="./images/Whatsapp azul.svg" alt="">
+                    </a>
+                </span>
+                <span class="icon instagram">
+                    <a href="https://www.instagram.com/ferprobolivia/?hl=es">
+                        <img src="./images/Instagram azul.svg" alt="">
+                    </a>
+                </span>
+                <span class="icon facebook">
+                    <a href="https://www.facebook.com/Ferprobolivia">
+                        <img src="./images/Facebook azul.svg" alt="">
+                    </a>
+                </span>
+                <span class="icon location">
+                    <a href="https://www.google.com/maps/place/FERPRO+BOLIVIA/@-16.4985992,-68.142266,17z/data=!3m1!4b1!4m6!3m5!1s0x915f21821d214a49:0x2abf1b89a032e382!8m2!3d-16.4985992!4d-68.1396911!16s%2Fg%2F11flskx523?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="./images/Ubicación.svg" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú responsive móvil -->
+    <div class="mobile-header">
+        <span class="menu-toggle" id="menu-toggle">
+            <img src="./images/Menú.svg" alt="">
+        </span>
+        <div class="logo">
+            <img src="./images/Logo.svg" alt="">
+        </div>
+        <span class="search-toggle" id="search-toggle">
+            <img src="./images/Lupa blanca.svg" alt="">
+        </span>
+    </div>
+    <!-- Barra de búsqueda móvil (oculta inicialmente) -->
+<div class="mobile-search-bar" id="mobile-search-bar">
+    <input type="text" placeholder="Buscar..." id="mobile-search-input">
+    <span id="mobile-search-close" class="mobile-search-close">
+      <img src="./images/X blanco.svg" alt="Cerrar búsqueda">
+    </span>
+  </div>
+  
+  
+
+    <div class="mobile-menu" id="mobile-menu">
+        <span class="close-menu" id="close-menu">
+            <img src="./images/X azul.svg" alt="">
+        </span>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contactanos.html">Contáctanos</a>
+            <a href="./carrito.html"><img src="./images/Carrito azul.svg" alt="">    Carrito de Compras</a>
+            <a href="./favoritos.html"><img src="./images/Corazon azul.svg" alt="">    Favoritos</a>
+            <a href="./perfil.html">Mi Cuenta</a>
+            <a href="./pedidos.html">Mis Pedidos</a>
+            <a href="./inicio_sesion.html">Cerrar Sesión</a>
+        </nav>
+        <a href="./inicio_sesion.html">
+            <button class="btn login-btn_2">Iniciar Sesión</button>
+        </a>
+    </div>
+
+
+
+
+
+
+    <section class="hero">
+        <div class="hero-image"></div>
+        <div class="hero-content">
+          <h1>HERRAMIENTAS <br>
+              DE CALIDAD <br>
+              TRABAJO DE <br>
+              CALIDAD</h1>
+              <div>
+                <a href="./productos.html"><button class="hero-button">Ver todos</button></a>
+              </div>
+        </div>
+      </section>
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Sección del carrusel (Solo para escritorio) -->
+<section class="carousel-section">
+    <h2 class="carousel-title">CATEGORÍAS MÁS COMPRADAS</h2>
+    <div class="carousel-container">
+        <button class="carousel-arrow left-arrow" id="prev">
+            <img src="./images/flecha_izquierda.svg" alt="Left Arrow">
+        </button>
+
+        <div class="carousel-wrapper">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <div class="card">
+                        <a href="./cat_17.html">
+                            <div class="image-container">
+                                <img src="./images/Categorias de herramientas/17.jpeg" alt="Máquinas Eléctricas" class="card-img">
+                            </div>
+                            <h3 class="card-title">MÁQUINAS ELÉCTRICAS</h3>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="./cat_2.html">
+                            <div class="image-container">
+                                <img src="./images/Categorias de herramientas/2.jpeg" alt="Herramientas de Mecánica" class="card-img">
+                            </div>
+                            <h3 class="card-title">HERRAMIENTAS DE MECÁNICA</h3>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="./cat_5.html">
+                            <div class="image-container">
+                                <img src="./images/Categorias de herramientas/5.jpeg" alt="Herramientas de Corte" class="card-img">
+                            </div>
+                            <h3 class="card-title">HERRAMIENTAS DE CORTE</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <div class="card">
+                        <a href="./cat_11.html">
+                            <div class="image-container">
+                                <img src="./images/Categorias de herramientas/11.jpeg" alt="Herramientas de Sujeción" class="card-img">
+                            </div>
+                            <h3 class="card-title">HERRAMIENTAS ELÉCTRICAS</h3>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="./cat_10.html">
+                            <div class="image-container">
+                                <img src="./images/Categorias de herramientas/10.jpeg" alt="Herramientas de Medición" class="card-img">
+                            </div>
+                            <h3 class="card-title">HERRAMIENTAS DE MEDICIÓN</h3>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="./cat_7.html">
+                            <div class="image-container">
+                                <img src="./images/Categorias de herramientas/7.jpeg" alt="Herramientas de Construcción" class="card-img">
+                            </div>
+                            <h3 class="card-title">HERRAMIENTAS DE PLOMERÍA</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-arrow right-arrow" id="next">
+            <img src="./images/flecha_derecha.svg" alt="Right Arrow">
+        </button>
+    </div>
+
+    <div class="carousel-indicators">
+        <div class="indicator active" data-index="0"></div>
+        <div class="indicator" data-index="1"></div>
+    </div>
+</section>
+
+<!-- Sección de cards para versión móvil -->
+<section class="mobile-card-section">
+    <h2 class="carousel-title">CATEGORÍAS MÁS COMPRADAS</h2>
+    <div class="mobile-cards">
+        <div class="mobile-card">
+            <a href="./cat_17.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/17.jpeg" alt="Máquinas Eléctricas" class="card-img">
+                </div>
+                <h3 class="card-title">MÁQUINAS ELÉCTRICAS</h3>
+            </a>
+        </div>
+        <div class="mobile-card">
+            <a href="./cat_2.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/2.jpeg" alt="Herramientas de Mecánica" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE MECÁNICA</h3>
+            </a>
+        </div>
+        <div class="mobile-card">
+            <a href="./cat_5.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/5.jpeg" alt="Herramientas de Corte" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE CORTE</h3>
+            </a>
+        </div>
+        <div class="mobile-card">
+            <a href="./cat_11.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/11.jpeg" alt="Herramientas de Sujeción" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS ELÉCTRICAS</h3>
+            </a>
+        </div>
+        <div class="mobile-card">
+            <a href="./cat_10.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/10.jpeg" alt="Herramientas de Medición" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE MEDICIÓN</h3>
+            </a>
+        </div>
+        <div class="mobile-card">
+            <a href="./cat_7.html">
+                <div class="image-container">
+                    <img src="./images/Categorias de herramientas/7.jpeg" alt="Herramientas de Construcción" class="card-img">
+                </div>
+                <h3 class="card-title">HERRAMIENTAS DE PLOMERÍA</h3>
+            </a>
+        </div>
+    </div>
+</section>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="fullwidth-bg-section"></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Sección Herramientas Más Compradas -->
+<section class="herramientas-section_dos">
+    <!-- Título -->
+    <h2 class="herramientas-title_dos">HERRAMIENTAS MÁS COMPRADAS</h2>
+  
+    <!-- Contenedor de Cards (escritorio) -->
+    <div class="cards-container_dos">
+      <div class="card_dos">
+        <a href="./cat_10_produc_2.html">
+        <img src="./images/Herramientas de Medición/500408.jpg" alt="Alicate Pico de Loro" class="card_dos-image">
+        <h3 class="card_dos-title">FLEXÓMETRO REFORZADO DOBLE CARA</h3>
+        <p class="card_dos-description">Código: 500403</p>
+        <h3 class="card_dos-price">Bs. 25.00</h3>
+        <a href="#">
+          <button class="card_dos-button open-cart-modal_dos">
+            <span class="button_dos-icon">Agregar</span>
+            <img src="./images/Carrito blanco.svg" alt="">
+          </button>
+        </a>
+        </a>
+      </div>
+      <div class="card_dos">
+        <a href="./cat_13_produc_6.html">
+        <img src="./images/Herramietnas de Soldadura/589700.jpg" alt="Herramienta 2" class="card_dos-image">
+        <h3 class="card_dos-title">MASCARA DE SOLDAR AUTOMÁTICO</h3>
+        <p class="card_dos-description">Código: 589700</p>
+        <h3 class="card_dos-price">Bs. 242.00</h3>
+        <a href="#">
+          <button class="card_dos-button open-cart-modal_dos">
+            <span class="button_dos-icon">Agregar</span>
+            <img src="./images/Carrito blanco.svg" alt="">
+          </button>
+        </a>
+        </a>
+      </div>
+      <div class="card_dos">
+        <a href="./cat_17_produc_1.html">
+        <img src="./images/Máquinas Eléctricas/780712.jpg" alt="Herramienta 3" class="card_dos-image">
+        <h3 class="card_dos-title">TALADRO ATORNILLADOR INALAMBRICO 12V</h3>
+        <p class="card_dos-description">Código: 780712</p>
+        <h3 class="card_dos-price">Bs. 402.00</h3>
+        <a href="#">
+          <button class="card_dos-button open-cart-modal_dos">
+            <span class="button_dos-icon">Agregar</span>
+            <img src="./images/Carrito blanco.svg" alt="">
+          </button>
+        </a>
+        </a>
+      </div>
+      <div class="card_dos">
+        <a href="./cat_17_produc_4.html">
+        <img src="./images/Máquinas Eléctricas/784621.jpg" alt="Herramienta 4" class="card_dos-image">
+        <h3 class="card_dos-title">AMOLADORA 5” 1200 W VELOCIDAD REGULABLE</h3>
+        <p class="card_dos-description">Código: 784621</p>
+        <h3 class="card_dos-price">Bs. 528.00</h3>
+        <a href="">
+          <button class="card_dos-button open-cart-modal_dos">
+            <span class="button_dos-icon">Agregar</span>
+            <img src="./images/Carrito blanco.svg" alt="">
+          </button>
+        </a>
+        </a>
+      </div>
+    </div>
+  
+    <!-- Botón "Ver todos" -->
+    <div class="ver-todos-container_dos">
+      <a href="./productos.html"><button class="ver-todos-btn_dos">Ver todos</button></a>
+    </div>
+  </section>
+  
+  <!-- Modal (ventana emergente) -->
+  <div class="modal_dos" id="cart-modal_dos">
+    <div class="modal-content_dos">
+      <button class="close-modal_dos" id="close-cart_dos">
+        <img src="./images/X blanco.svg" alt="Cerrar Modal">
+      </button>
+      <img src="./images/Correcto blanco.svg" alt="Carrito" class="modal-icon_dos">
+      <p>AÑADIDO AL CARRITO</p>
+      <a href="./carrito.html">
+        <button class="modal-button_dos">Echar un vistazo</button>
+      </a>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Versión Escritorio -->
+<div class="bg-overlay-container">
+    <section class="fullwidth-bg-section2"></section>
+    <div class="overlay-box">
+      <div class="overlay-content">
+        <div class="overlay-col overlay-image">
+          <img src="./images/Logo_fipaz.png" alt="Imagen del recuadro">
+        </div>
+        <div class="overlay-col overlay-text">
+          <p>
+            En FERPRO, nos complace anunciar nuestra participación en la FIPAZ 2024. Este año, traemos muchas sorpresas, descuentos exclusivos y, como siempre, las mejores herramientas del mercado. ¡Visítanos y descubre todo lo que tenemos para ofrecer!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Versión Móvil -->
+  <section class="mobile-overlay-section">
+    <div class="mobile-overlay-content">
+      <div class="mobile-overlay-image">
+        <img src="./images/Logo_fipaz.png" alt="Imagen overlay móvil">
+      </div>
+      <div class="mobile-overlay-text">
+        <p>
+          En FERPRO, nos complace anunciar nuestra participación en la FIPAZ 2024. Este año, traemos muchas sorpresas, descuentos exclusivos y, como siempre, las mejores herramientas del mercado. ¡Visítanos y descubre todo lo que tenemos para ofrecer!
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+          
+          
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Columna 1: Logo -->
+        <div class="footer-column footer-logo">
+            <div class="logo"><img src="./images/Logo.svg" alt=""></div>
+        </div>
+
+        <!-- Columna 2: Dirección -->
+        <div class="footer-column">
+            <h3>DIRECCIÓN - LA PAZ - BOLIVIA</h3>
+            <a href="https://www.google.com/maps/place/FERPRO+BOLIVIA/@-16.4985992,-68.142266,17z/data=!3m1!4b1!4m6!3m5!1s0x915f21821d214a49:0x2abf1b89a032e382!8m2!3d-16.4985992!4d-68.1396911!16s%2Fg%2F11flskx523?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">Isaac Tamayo, esquina Sagarnaga N° 440.</a>
+            <a href="https://www.google.com/maps/place/FERPRO+SUC+CALACOTO/@-16.5386615,-68.0759644,17z/data=!3m1!4b1!4m6!3m5!1s0x915f2195cca8ccc1:0x597733fa149b222c!8m2!3d-16.5386615!4d-68.0733895!16s%2Fg%2F11w3ms8crt?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">Calle Prolongación Ballivián entre 24 y 25 de Calacoto N° 1780.</a>
+        </div>
+
+        <!-- Columna 3: Horarios -->
+        <div class="footer-column">
+            <h3>HORARIOS DE ATENCIÓN</h3>
+            <p>Lunes a Viernes: 07:00am - 19:00pm</p>
+            <p>Sábados: 07:00am - 17:00pm</p>
+            <p>Domingos: Cerrado</p>
+        </div>
+
+        <!-- Columna 4: Redes sociales -->
+        <div class="footer-column">
+            <h3>ENCUÉNTRANOS EN</h3>
+            <div class="social-icons_footer">
+                <a href="https://www.instagram.com/ferprobolivia/?hl=es" class="icon">
+                    <img src="./images/Instagram blanco.svg" alt="">
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=%2B59175855677&context=ARBpb9Xwp5_bV6Y7t1YTJjxB5lqlfi8gEa_mHw11ySIlVI69ozgwRi2NKFpZHTrGMxisqIkyBixEijRYkP3wj9uF3qHSeO7Kz04pJANsrE6zKieKfxv9U9HMlUs4GuEjPoetBd12Ycoo0je412B1BrV6_g&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawIcUDVleHRuA2FlbQIxMAABHWlhMhRQLdx8C7kH-u3Sf6DwNXk9rf34yClDsjSOQ0j47mqMRdPVyBW9VQ_aem_BHcYx3rsX6bW71CE2FB8Kw" class="icon"><img src="./images/Whatsapp blanco.svg" alt=""></a>
+                <a href="https://www.facebook.com/Ferprobolivia" class="icon"><img src="./images/Facebook blanco.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<section>
+    <!-- BOTÓN FLOTANTE FIJO (SCROLL TOP) -->
+    <div class="boton_regreso" id="botonRegreso">
+        <img src="./images/flecha_arriba.svg" alt="Icono de regreso" class="boton_regreso-icono">
+    </div>
+</section>
+
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

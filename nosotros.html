@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="icon" type="image/svg" href="./images/favicon.svg">
+    <link rel="stylesheet" href="./stylesheets/nosotros.css">
+</head>
+<body>
+   <!-- Menú de escritorio -->
+   <header class="menu">
+        <!-- Primera fila -->
+        <div class="menu-row first-row">
+            <div class="logo">
+                <img src="./images/Logo.svg" height="45px" alt="">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar..." id="search-input">
+                <span id="search-icon" class="icon">
+                    <img src="./images/Lupa blanca.svg" alt="">
+                </span>
+            </div>
+            <div class="icons">
+                <a href="./favoritos.html">
+                    <span class="icon heart">
+                        <img src="./images/Corazon blanco.svg" alt="">
+                    </span>
+                </a>
+                <a href="./carrito.html">
+                    <span class="icon cart">
+                        <img src="./images/Carrito blanco.svg" alt="">
+                    </span>
+                </a>
+                <a href="./perfil.html">
+                    <span class="icon login">
+                        <img src="./images/Loging blanco.svg" alt="">
+                    </span>
+                </a>
+            </div>
+            <a href="./inicio_sesion.html">
+                <button class="btn login-btn">Iniciar Sesión</button>
+            </a>
+        </div>
+
+        <!-- Segunda fila -->
+        <div class="menu-row second-row">
+            <nav>
+                <a href="./index.html">Inicio</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./servicios.html">Servicios</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./contactanos.html">Contáctanos</a>
+            </nav>
+            <div class="social-icons">
+                <span class="icon whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=%2B59175855677&context=ARB_dfxMsqVhh3XzlwUVGqMzL0pU7gFqu9ltVPziCmued-znlYnOoaSTc32muw8w80Zx-iiu3slAgMUH8cbTHE27xGoooLdnKWn3w-uojBkffZf8MAZNaI4XokEi8jy_6M8ow_5yb9heoKTXtHad1gCaPg&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawIcRgpleHRuA2FlbQIxMAABHXzoV6y57XjXxgoqEhAn0xRcW8z6prmbOU5Y1iLYRrH6L9vkk08MPEQqPA_aem_Ars4Fah451e_x6w5Bk8niw">
+                        <img src="./images/Whatsapp azul.svg" alt="">
+                    </a>
+                </span>
+                <span class="icon instagram">
+                    <a href="https://www.instagram.com/ferprobolivia/?hl=es">
+                        <img src="./images/Instagram azul.svg" alt="">
+                    </a>
+                </span>
+                <span class="icon facebook">
+                    <a href="https://www.facebook.com/Ferprobolivia">
+                        <img src="./images/Facebook azul.svg" alt="">
+                    </a>
+                </span>
+                <span class="icon location">
+                    <a href="https://www.google.com/maps/place/FERPRO+BOLIVIA/@-16.4985992,-68.142266,17z/data=!3m1!4b1!4m6!3m5!1s0x915f21821d214a49:0x2abf1b89a032e382!8m2!3d-16.4985992!4d-68.1396911!16s%2Fg%2F11flskx523?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="./images/Ubicación.svg" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú responsive móvil -->
+    <div class="mobile-header">
+        <span class="menu-toggle" id="menu-toggle">
+            <img src="./images/Menú.svg" alt="">
+        </span>
+        <div class="logo">
+            <img src="./images/Logo.svg" alt="">
+        </div>
+        <span class="search-toggle" id="search-toggle">
+            <img src="./images/Lupa blanca.svg" alt="">
+        </span>
+    </div>
+    <!-- Barra de búsqueda móvil (oculta inicialmente) -->
+<div class="mobile-search-bar" id="mobile-search-bar">
+    <input type="text" placeholder="Buscar..." id="mobile-search-input">
+    <span id="mobile-search-close" class="mobile-search-close">
+      <img src="./images/X blanco.svg" alt="Cerrar búsqueda">
+    </span>
+  </div>
+  
+
+    <div class="mobile-menu" id="mobile-menu">
+        <span class="close-menu" id="close-menu">
+            <img src="./images/X azul.svg" alt="">
+        </span>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contactanos.html">Contáctanos</a>
+            <a href="./carrito.html"><img src="./images/Carrito azul.svg" alt="">    Carrito de Compras</a>
+            <a href="./favoritos.html"><img src="./images/Corazon azul.svg" alt="">    Favoritos</a>
+            <a href="./perfil.html">Mi Cuenta</a>
+            <a href="./pedidos.html">Mis Pedidos</a>
+            <a href="./inicio_sesion.html">Cerrar Sesión</a>
+        </nav>
+        <a href="./inicio_sesion.html">
+            <button class="btn login-btn_2">Iniciar Sesión</button>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!-- Migas de pan -->
+    <div class="breadcrumbs">
+        <nav>
+            <h3 class="breadcrumb-item"><a href="./index.html">&gt; Inicio</a></h3>
+            <h3 class="breadcrumb-item breadcrumb-active"><a href="">&gt; Nosotros</a></h3>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+     <!-- Primera Sección -->
+     <section class="about-section">
+        <div class="background-image"></div> <!-- Imagen de fondo -->
+
+        <div class="content-box">
+            <h2 class="about-title">Sobre nosotros y nuestro enfoque en calidad y servicio</h2>
+            <p class="about-text">
+                Somos una empresa especializada en la comercialización de productos de ferretería, comprometida en satisfacer las necesidades de nuestros clientes con productos de calidad, precios competitivos y un servicio eficiente. Operamos a nivel nacional, importando y vendiendo al por mayor y menor, con la visión de ser un referente en el sector y contribuir al desarrollo de Bolivia, siempre trabajando en beneficio de nuestros clientes, colaboradores y aliados estratégicos.
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <section class="history-section">
+        <h2 class="history-title">NUESTRA HISTORIA</h2>
+    
+        <!-- Versión Escritorio -->
+        <div class="history-grid desktop">
+            <!-- Fila 1 -->
+            <div class="history-text right-align">
+                FERPRO inicia sus actividades comercializando artículos de ferretería en el año 1992 representados por los propietarios Eulogio Mayta Quispe y Zenobia Nina Blanco, la tienda en alquiler contaba con 5 mts^2.
+            </div>
+            <div class="history-year">1992</div>
+            <div></div>
+    
+            <!-- Fila 2 -->
+            <div></div>
+            <div class="history-year">1995</div>
+            <div class="history-text left-align">
+                En el año 1995 se apertura la segunda tienda como sucursal para hacer la comercialización de herramientas en mayor variedad y con un espacio más amplio del local para brindar mayor satisfacción y comodidad al cliente.
+            </div>
+    
+            <!-- Fila 3 -->
+            <div class="history-text right-align">
+                En el año 2001 la empresa adquiere mayor credibilidad y competitividad debido al crecimiento, compromiso, responsabilidad y esfuerzos por parte de los propietarios por satisfacer las necesidades del cliente.
+            </div>
+            <div class="history-year">2001</div>
+            <div></div>
+    
+            <!-- Fila 4 -->
+            <div></div>
+            <div class="history-year">2005</div>
+            <div class="history-text left-align">
+                En el año 2005 la empresa adquiere su primer local propio, fruto del sacrificio, esfuerzo y perseverancia, llegando a tener un espacio más amplio para poder ofertar más variedad, comodidad y atención eficiente a sus clientes.
+            </div>
+    
+            <!-- Fila 5 -->
+            <div class="history-text right-align">
+                En el año 2011 la empresa diversifica sus actividades importando artículos de ferretería con el fin de expandir sus mercados, realizar la venta directa a sus clientes, ofrecer precios más competitivos y productos de mejor calidad.
+            </div>
+            <div class="history-year">2011</div>
+            <div></div>
+    
+            <!-- Fila 6 -->
+            <div></div>
+            <div class="history-year">2017</div>
+            <div class="history-text left-align">
+                Desde 2017, hemos redefinido el enfoque de nuestra tienda al elegir a la marca Wokin Tools como nuestra marca insignia, la cual representamos con orgullo en cada feria y evento en los que participamos como empresa.
+            </div>
+        </div>
+    
+        <!-- Versión Móvil -->
+        <div class="history-grid-mobile mobile">
+            <div class="history-year">1992</div>
+            <div class="history-text">FERPRO inicia sus actividades comercializando artículos de ferretería en el año 1992 representados por los propietarios Eulogio Mayta Quispe y Zenobia Nina Blanco, la tienda en alquiler contaba con 5 mts^2.</div>
+    
+            <div class="history-year">1995</div>
+            <div class="history-text">En el año 1995 se apertura la segunda tienda como sucursal para hacer la comercialización de herramientas en mayor variedad y con un espacio más amplio del local para brindar mayor satisfacción y comodidad al cliente.</div>
+    
+            <div class="history-year">2001</div>
+            <div class="history-text">En el año 2001 la empresa adquiere mayor credibilidad y competitividad debido al crecimiento, compromiso, responsabilidad y esfuerzos por parte de los propietarios por satisfacer las necesidades del cliente.</div>
+    
+            <div class="history-year">2005</div>
+            <div class="history-text">En el año 2005 la empresa adquiere su primer local propio, fruto del sacrificio, esfuerzo y perseverancia, llegando a tener un espacio más amplio para poder ofertar más variedad, comodidad y atención eficiente a sus clientes.</div>
+    
+            <div class="history-year">2011</div>
+            <div class="history-text">En el año 2011 la empresa diversifica sus actividades importando artículos de ferretería con el fin de expandir sus mercados, realizar la venta directa a sus clientes, ofrecer precios más competitivos y productos de mejor calidad.</div>
+    
+            <div class="history-year">2017</div>
+            <div class="history-text">Desde 2017, hemos redefinido el enfoque de nuestra tienda al elegir a la marca Wokin Tools como nuestra marca insignia, la cual representamos con orgullo en cada feria y evento en los que participamos como empresa.</div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+
+
+
+    <section class="mission-section">
+        <div class="mission-container">
+            <div class="mission-text">
+                <h2>Misión</h2>
+                <p>
+                    Proveer herramientas manuales y eléctricas con productos de calidad, precios competitivos, atención especializada y servicio eficiente con un equipo de trabajo altamente responsable, comprometido y capacitado para satisfacer sus necesidades y expectativas de nuestros clientes y de esta manera contribuir al desarrollo la empresa y del país.
+                </p>
+            </div>
+            <div class="mission-image">
+                <img src="./images/mision_icono.svg" alt="Misión">
+            </div>
+        </div>
+    </section>
+    
+    <section class="vision-section">
+        <div class="vision-container">
+            <div class="vision-image">
+                <img src="./images/vision_icono.svg" alt="Visión">
+            </div>
+            <div class="vision-text">
+                <h2>Visión</h2>
+                <p>
+                    Ser una empresa referente en la importación y comercialización de herramientas para el sector construcción con una amplia línea de productos, un eficiente equipo de colaboradores y aliados estratégicos para expandirnos a nivel nacional.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Columna 1: Logo -->
+            <div class="footer-column footer-logo">
+                <div class="logo"><img src="./images/Logo.svg" alt=""></div>
+            </div>
+    
+            <!-- Columna 2: Dirección -->
+            <div class="footer-column">
+                <h3>DIRECCIÓN - LA PAZ - BOLIVIA</h3>
+                <a href="https://www.google.com/maps/place/FERPRO+BOLIVIA/@-16.4985992,-68.142266,17z/data=!3m1!4b1!4m6!3m5!1s0x915f21821d214a49:0x2abf1b89a032e382!8m2!3d-16.4985992!4d-68.1396911!16s%2Fg%2F11flskx523?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">Isaac Tamayo, esquina Sagarnaga N° 440.</a>
+                <a href="https://www.google.com/maps/place/FERPRO+SUC+CALACOTO/@-16.5386615,-68.0759644,17z/data=!3m1!4b1!4m6!3m5!1s0x915f2195cca8ccc1:0x597733fa149b222c!8m2!3d-16.5386615!4d-68.0733895!16s%2Fg%2F11w3ms8crt?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">Calle Prolongación Ballivián entre 24 y 25 de Calacoto N° 1780.</a>
+            </div>
+    
+            <!-- Columna 3: Horarios -->
+            <div class="footer-column">
+                <h3>HORARIOS DE ATENCIÓN</h3>
+                <p>Lunes a Viernes: 07:00am - 19:00pm</p>
+                <p>Sábados: 07:00am - 17:00pm</p>
+                <p>Domingos: Cerrado</p>
+            </div>
+    
+            <!-- Columna 4: Redes sociales -->
+            <div class="footer-column">
+                <h3>ENCUÉNTRANOS EN</h3>
+                <div class="social-icons_footer">
+                    <a href="https://www.instagram.com/ferprobolivia/?hl=es" class="icon">
+                        <img src="./images/Instagram blanco.svg" alt="">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=%2B59175855677&context=ARBpb9Xwp5_bV6Y7t1YTJjxB5lqlfi8gEa_mHw11ySIlVI69ozgwRi2NKFpZHTrGMxisqIkyBixEijRYkP3wj9uF3qHSeO7Kz04pJANsrE6zKieKfxv9U9HMlUs4GuEjPoetBd12Ycoo0je412B1BrV6_g&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawIcUDVleHRuA2FlbQIxMAABHWlhMhRQLdx8C7kH-u3Sf6DwNXk9rf34yClDsjSOQ0j47mqMRdPVyBW9VQ_aem_BHcYx3rsX6bW71CE2FB8Kw" class="icon"><img src="./images/Whatsapp blanco.svg" alt=""></a>
+                    <a href="https://www.facebook.com/Ferprobolivia" class="icon"><img src="./images/Facebook blanco.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <section>
+        <!-- BOTÓN FLOTANTE FIJO (SCROLL TOP) -->
+        <div class="boton_regreso" id="botonRegreso">
+            <img src="./images/flecha_arriba.svg" alt="Icono de regreso" class="boton_regreso-icono">
+        </div>
+    </section>
+
+    
+<script src="./scripts/nosotros.js"></script>
+</body>
+</html>

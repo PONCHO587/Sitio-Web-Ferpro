@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transacción</title>
+  <link rel="icon" type="image/svg" href="./images/favicon.svg">
+  <link rel="stylesheet" href="./stylesheets/transaccion.css" />
+</head>
+<body>
+  <!-- Menú de escritorio -->
+  <header class="menu">
+    <!-- Primera fila -->
+    <div class="menu-row first-row">
+        <div class="logo">
+            <img src="./images/Logo.svg" height="45px" alt="">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar..." id="search-input">
+            <span id="search-icon" class="icon">
+                <img src="./images/Lupa blanca.svg" alt="">
+            </span>
+        </div>
+        <div class="icons">
+            <a href="./favoritos.html">
+                <span class="icon heart">
+                    <img src="./images/Corazon blanco.svg" alt="">
+                </span>
+            </a>
+            <a href="./carrito.html">
+                <span class="icon cart">
+                    <img src="./images/Carrito blanco.svg" alt="">
+                </span>
+            </a>
+            <a href="./perfil.html">
+                <span class="icon login">
+                    <img src="./images/Loging blanco.svg" alt="">
+                </span>
+            </a>
+        </div>
+        <a href="./inicio_sesion.html">
+            <button class="btn login-btn">Iniciar Sesión</button>
+        </a>
+    </div>
+
+    <!-- Segunda fila -->
+    <div class="menu-row second-row">
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contactanos.html">Contáctanos</a>
+        </nav>
+        <div class="social-icons">
+            <span class="icon whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=%2B59175855677&context=ARB_dfxMsqVhh3XzlwUVGqMzL0pU7gFqu9ltVPziCmued-znlYnOoaSTc32muw8w80Zx-iiu3slAgMUH8cbTHE27xGoooLdnKWn3w-uojBkffZf8MAZNaI4XokEi8jy_6M8ow_5yb9heoKTXtHad1gCaPg&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawIcRgpleHRuA2FlbQIxMAABHXzoV6y57XjXxgoqEhAn0xRcW8z6prmbOU5Y1iLYRrH6L9vkk08MPEQqPA_aem_Ars4Fah451e_x6w5Bk8niw">
+                    <img src="./images/Whatsapp azul.svg" alt="">
+                </a>
+            </span>
+            <span class="icon instagram">
+                <a href="https://www.instagram.com/ferprobolivia/?hl=es">
+                    <img src="./images/Instagram azul.svg" alt="">
+                </a>
+            </span>
+            <span class="icon facebook">
+                <a href="https://www.facebook.com/Ferprobolivia">
+                    <img src="./images/Facebook azul.svg" alt="">
+                </a>
+            </span>
+            <span class="icon location">
+                <a href="https://www.google.com/maps/place/FERPRO+BOLIVIA/@-16.4985992,-68.142266,17z/data=!3m1!4b1!4m6!3m5!1s0x915f21821d214a49:0x2abf1b89a032e382!8m2!3d-16.4985992!4d-68.1396911!16s%2Fg%2F11flskx523?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">
+                    <img src="./images/Ubicación.svg" alt="">
+                </a>
+            </span>
+        </div>
+    </div>
+</header>
+
+<!-- Menú responsive móvil -->
+<div class="mobile-header">
+    <span class="menu-toggle" id="menu-toggle">
+        <img src="./images/Menú.svg" alt="">
+    </span>
+    <div class="logo">
+        <img src="./images/Logo.svg" alt="">
+    </div>
+    <span class="search-toggle" id="search-toggle">
+        <img src="./images/Lupa blanca.svg" alt="">
+    </span>
+</div>
+<!-- Barra de búsqueda móvil (oculta inicialmente) -->
+<div class="mobile-search-bar" id="mobile-search-bar">
+  <input type="text" placeholder="Buscar..." id="mobile-search-input">
+  <span id="mobile-search-close" class="mobile-search-close">
+    <img src="./images/X blanco.svg" alt="Cerrar búsqueda">
+  </span>
+</div>
+
+
+<div class="mobile-menu" id="mobile-menu">
+    <span class="close-menu" id="close-menu">
+        <img src="./images/X azul.svg" alt="">
+    </span>
+    <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./productos.html">Productos</a>
+        <a href="./servicios.html">Servicios</a>
+        <a href="./nosotros.html">Nosotros</a>
+        <a href="./contactanos.html">Contáctanos</a>
+        <a href="./carrito.html"><img src="./images/Carrito azul.svg" alt="">    Carrito de Compras</a>
+        <a href="./favoritos.html"><img src="./images/Corazon azul.svg" alt="">    Favoritos</a>
+        <a href="./perfil.html">Mi Cuenta</a>
+        <a href="./pedidos.html">Mis Pedidos</a>
+        <a href="./inicio_sesion.html">Cerrar Sesión</a>
+    </nav>
+    <a href="./inicio_sesion.html">
+        <button class="btn login-btn_2">Iniciar Sesión</button>
+    </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Migas de pan -->
+<div class="breadcrumbs">
+    <nav>
+        <h3 class="breadcrumb-item"><a href="./index.html">&gt; Inicio</a></h3>
+        <h3 class="breadcrumb-item"><a href="./carrito.html">&gt; Carrito de Compras</a></h3>
+        <h3 class="breadcrumb-item breadcrumb-active"><a href="">&gt; Transacción</a></h3>
+    </nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- SECCIÓN VERSIÓN ESCRITORIO -->
+  <section class="desktop-section">
+    <div class="desktop-container">
+      <!-- Título principal -->
+      <h2 class="main-title">DETALLES DE LA TRANSACCIÓN</h2>
+
+      <!-- Subtítulo: Datos del Pedido -->
+      <div class="info-block">
+        <span><strong>Fecha de Compra:</strong> 12/09/2024</span>
+        <span><strong>Número de pedido:</strong> 462891</span>
+      </div>
+
+
+      <!-- Tabla de productos (versión escritorio) -->
+      <table class="table-desktop">
+        <thead>
+          <tr>
+            <!-- Columnas 1 y 2 sin título explícito -->
+            <th colspan="2"></th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Envío</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Fila 2 -->
+          <tr>
+            <td><img src="./images/Herramietnas de sujeción/100510.jpg" alt="Producto 1" width="80" height="80"></td>
+            <td>Alicate Pico de Loro</td>
+            <td>1</td>
+            <td>Bs. 53.00</td>
+            <td>Bs. 0</td>
+            <td>Bs. 53.00</td>
+          </tr>
+          <!-- Fila 3 -->
+          <tr>
+            <td><img src="./images/Herramietnas de sujeción/102345.jpg" alt="Producto 2" width="80" height="80"></td>
+            <td>Juego de Alicates Pequeños</td>
+            <td>2</td>
+            <td>Bs. 72.00</td>
+            <td>Bs. 0</td>
+            <td>Bs. 144.00</td>
+          </tr>
+          <!-- Fila 4 -->
+          <tr>
+            <td><img src="./images/Herramientas de Mecánica/150240.jpg" alt="Producto 3" width="80" height="80"></td>
+            <td>Llave Crescent Pulido y Acabado Negro</td>
+            <td>1</td>
+            <td>Bs. 80.00</td>
+            <td>Bs. 0</td>
+            <td>Bs. 80.00</td>
+          </tr>
+          <!-- Fila 5 -->
+          <tr>
+            <td><img src="./images/Herramientas de Impacto/250315.jpg" alt="Producto 4" width="80" height="80"></td>
+            <td>Combo</td>
+            <td>1</td>
+            <td>Bs. 50.00</td>
+            <td>Bs. 0</td>
+            <td>Bs. 50.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Total del Pedido (alineado a la derecha) -->
+      <div class="total-line">
+        <span class="label">Total del Pedido:</span>
+        <span class="amount">Bs. 255.00</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN VERSIÓN MÓVIL -->
+  <section class="mobile-section">
+    <div class="mobile-container">
+      <!-- Título principal -->
+      <h2 class="main-title">DETALLES DE LA TRANSACCIÓN</h2>
+
+      <!-- Subtítulo: Datos del Pedido -->
+      <div class="info-block">
+        <span><strong>Fecha de Compra:</strong> 12/09/2024</span>
+        <span><strong>Número de pedido:</strong> 462891</span>
+      </div>
+
+    
+      <!-- Listado de productos (versión móvil) -->
+      <div class="mobile-products">
+        <hr>
+        <!-- Producto 1 -->
+        <div class="mobile-row">
+          <div class="mobile-col1">
+            <img src="./images/Herramietnas de sujeción/100510.jpg" alt="Producto 1" width="50" height="50">
+          </div>
+          <div class="mobile-col2">
+            <span class="product-name">Alicate Pico de Loro</span>
+            <span><strong>Cantidad:</strong> 1</span>
+            <span><strong>Precio:</strong> Bs. 53.00</span>
+            <span><strong>Envío:</strong> Bs. 0</span>
+            <span><strong>Subtotal:</strong> Bs. 53.00</span>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Producto 2 -->
+        <div class="mobile-row">
+          <div class="mobile-col1">
+            <img src="./images/Herramietnas de sujeción/102345.jpg" alt="Producto 2" width="50" height="50">
+          </div>
+          <div class="mobile-col2">
+            <span class="product-name">Juego de Alicates Pequeños</span>
+            <span><strong>Cantidad:</strong> 2</span>
+            <span><strong>Precio:</strong> Bs. 72.00</span>
+            <span><strong>Envío:</strong> Bs. 0</span>
+            <span><strong>Subtotal:</strong> Bs. 144.00</span>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Producto 3 -->
+        <div class="mobile-row">
+          <div class="mobile-col1">
+            <img src="./images/Herramientas de Mecánica/150240.jpg" alt="Producto 3" width="50" height="50">
+          </div>
+          <div class="mobile-col2">
+            <span class="product-name">Llave Crescent Pulido y Acabado Negro</span>
+            <span><strong>Cantidad:</strong> 1</span>
+            <span><strong>Precio:</strong> Bs. 80.00</span>
+            <span><strong>Envío:</strong> Bs. 0</span>
+            <span><strong>Subtotal:</strong> Bs. 80.00</span>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Producto 4 -->
+        <div class="mobile-row">
+          <div class="mobile-col1">
+            <img src="./images/Herramientas de Impacto/250315.jpg" alt="Producto 4" width="50" height="50">
+          </div>
+          <div class="mobile-col2">
+            <span class="product-name">Combo</span>
+            <span><strong>Cantidad:</strong> 1</span>
+            <span><strong>Precio:</strong> Bs. 50.00</span>
+            <span><strong>Envío:</strong> Bs. 0</span>
+            <span><strong>Subtotal:</strong> Bs. 50.00</span>
+          </div>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Total del Pedido (alineado a la derecha) -->
+      <div class="total-line">
+        <span class="label">Total del Pedido:</span>
+        <span class="amount">Bs. 255.00</span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="contact-section">
+    <form class="contact-form">
+      <div class="form-group full-width"><h2 class="contact-title">Datos Personales</h2></div>
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" placeholder="Escribe tu nombre">
+        </div>   
+        <div class="form-group">
+            <label for="lastname">Apellidos</label>
+            <input type="text" id="lastname" placeholder="Escribe tus apellidos">
+        </div>
+        <div class="form-group">
+          <label for="mobile">Teléfono Móvil</label>
+          <input type="text" id="mobile" placeholder="Escribe tu teléfono móvil">
+      </div>
+      <div class="form-group">
+          <label for="phone">Teléfono Fijo</label>
+          <input type="text" id="phone" placeholder="Escribe tu teléfono fijo">
+      </div>
+      <div class="form-group full-width"><h2 class="contact-title">Datos de Entrega</h2></div>
+      <div class="form-group">
+        <label for="consultation">Tipo de Envío</label>
+        <select id="consultation">
+            <option>Recoger de la tienda</option>
+            <option>Envío a otro departamento</option>
+            <option>Delivery en la ciudad de La Paz</option>
+        </select>
+      </div>
+        <div class="form-group">
+            <label for="city">Ciudad</label>
+            <select id="city">
+                <option>La Paz</option>
+                <option>Santa Cruz</option>
+                <option>Oruro</option>
+                <option>Cochabamba</option>
+                <option>Potosí</option>
+                <option>Bení</option>
+                <option>Pando</option>
+                <option>Chuquisaca</option>
+                <option>Tarija</option>
+            </select>
+        </div>
+        <div class="form-group full-width">
+          <label for="email">Dirección de Envío (La Paz)</label>
+          <input type="email" id="email" placeholder="Escribe tu dirección principal de envío">
+        </div>
+        <div class="form-group full-width"><h2 class="contact-title">Datos de Facturación</h2></div>
+        <div class="form-group">
+            <label for="name">Número de CI o Nit</label>
+            <input type="text" id="name" placeholder="Escribe tu número de CI o Nit">
+        </div>   
+        <div class="form-group">
+            <label for="lastname">Nombre o Razón Social</label>
+            <input type="text" id="lastname" placeholder="Escribe nombre o razón social">
+        </div>
+        <div class="form-group full-width"><h2 class="contact-title">Pago</h2></div>
+        <div class="form-group full-width">
+          <label for="email">Número de la Tarjeta</label>
+          <input type="email" id="email" placeholder="N° de la tarjeta">
+        </div>
+        <div class="form-group">
+          <label for="consultation">Fecha Expiración (mes)</label>
+          <select id="consultation">
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="consultation">Fecha Expiración (año)</label>
+          <select id="consultation">
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+            </select>
+        </div>
+        <div class="form-group full-width">
+          <label for="email">Código de Seguridad</label>
+          <input type="password" id="password" placeholder="CVV">
+        </div>
+    </form>
+
+</section>
+<button type="submit" class="send-button" id="send-button">Pagar</button>
+
+<!-- Ventana emergente -->
+<div class="modal" id="success-modal">
+    <div class="modal-content">
+        <button class="close-modal" id="close-modal">
+            <a href="./pedidos.html"><img src="./images/X blanco.svg" alt="Cerrar" class="xicon"></a>
+        </button>
+        <img src="./images/Correcto blanco.svg" alt="Éxito" class="modal-icon">
+        <p class="modal-title">¡PAGO REALIZADO CON ÉXITO!</p>
+        <p class="modal-text">Gracias por su compra</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+        <!-- Columna 1: Logo -->
+        <div class="footer-column footer-logo">
+            <div class="logo"><img src="./images/Logo.svg" alt=""></div>
+        </div>
+
+        <!-- Columna 2: Dirección -->
+        <div class="footer-column">
+            <h3>DIRECCIÓN - LA PAZ - BOLIVIA</h3>
+            <a href="https://www.google.com/maps/place/FERPRO+BOLIVIA/@-16.4985992,-68.142266,17z/data=!3m1!4b1!4m6!3m5!1s0x915f21821d214a49:0x2abf1b89a032e382!8m2!3d-16.4985992!4d-68.1396911!16s%2Fg%2F11flskx523?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">Isaac Tamayo, esquina Sagarnaga N° 440.</a>
+            <a href="https://www.google.com/maps/place/FERPRO+SUC+CALACOTO/@-16.5386615,-68.0759644,17z/data=!3m1!4b1!4m6!3m5!1s0x915f2195cca8ccc1:0x597733fa149b222c!8m2!3d-16.5386615!4d-68.0733895!16s%2Fg%2F11w3ms8crt?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">Calle Prolongación Ballivián entre 24 y 25 de Calacoto N° 1780.</a>
+        </div>
+
+        <!-- Columna 3: Horarios -->
+        <div class="footer-column">
+            <h3>HORARIOS DE ATENCIÓN</h3>
+            <p>Lunes a Viernes: 07:00am - 19:00pm</p>
+            <p>Sábados: 07:00am - 17:00pm</p>
+            <p>Domingos: Cerrado</p>
+        </div>
+
+        <!-- Columna 4: Redes sociales -->
+        <div class="footer-column">
+            <h3>ENCUÉNTRANOS EN</h3>
+            <div class="social-icons_footer">
+                <a href="https://www.instagram.com/ferprobolivia/?hl=es" class="icon">
+                    <img src="./images/Instagram blanco.svg" alt="">
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=%2B59175855677&context=ARBpb9Xwp5_bV6Y7t1YTJjxB5lqlfi8gEa_mHw11ySIlVI69ozgwRi2NKFpZHTrGMxisqIkyBixEijRYkP3wj9uF3qHSeO7Kz04pJANsrE6zKieKfxv9U9HMlUs4GuEjPoetBd12Ycoo0je412B1BrV6_g&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawIcUDVleHRuA2FlbQIxMAABHWlhMhRQLdx8C7kH-u3Sf6DwNXk9rf34yClDsjSOQ0j47mqMRdPVyBW9VQ_aem_BHcYx3rsX6bW71CE2FB8Kw" class="icon"><img src="./images/Whatsapp blanco.svg" alt=""></a>
+                <a href="https://www.facebook.com/Ferprobolivia" class="icon"><img src="./images/Facebook blanco.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<section>
+  <!-- BOTÓN FLOTANTE FIJO (SCROLL TOP) -->
+  <div class="boton_regreso" id="botonRegreso">
+      <img src="./images/flecha_arriba.svg" alt="Icono de regreso" class="boton_regreso-icono">
+  </div>
+</section>
+
+
+  <script src="./scripts/transaccion.js"></script>
+</body>
+</html>
