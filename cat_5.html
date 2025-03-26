@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas de Corte</title>
+    <link rel="icon" type="image/svg" href="./images/favicon.svg">
+    <link rel="stylesheet" href="./stylesheets/cat_1.css">
+</head>
+<body>
+   <!-- Menú de escritorio -->
+   <header class="menu">
+        <!-- Primera fila -->
+        <div class="menu-row first-row">
+            <div class="logo">
+                <img src="./images/Logo.svg" height="45px" alt="">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar..." id="search-input">
+                <span id="search-icon" class="icon">
+                    <img src="./images/Lupa blanca.svg" alt="">
+                </span>
+            </div>
+            <div class="icons">
+                <a href="./favoritos.html">
+                    <span class="icon heart">
+                        <img src="./images/Corazon blanco.svg" alt="">
+                    </span>
+                </a>
+                <a href="./carrito.html">
+                    <span class="icon cart">
+                        <img src="./images/Carrito blanco.svg" alt="">
+                    </span>
+                </a>
+                <a href="./perfil.html">
+                    <span class="icon login">
+                        <img src="./images/Loging blanco.svg" alt="">
+                    </span>
+                </a>
+            </div>
+            <a href="./inicio_sesion.html">
+                <button class="btn login-btn">Iniciar Sesión</button>
+            </a>
+        </div>
+
+        <!-- Segunda fila -->
+        <div class="menu-row second-row">
+            <nav>
+                <a href="./index.html">Inicio</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./servicios.html">Servicios</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./contactanos.html">Contáctanos</a>
+            </nav>
+            <div class="social-icons">
+                <span class="icon whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=%2B59175855677&context=ARB_dfxMsqVhh3XzlwUVGqMzL0pU7gFqu9ltVPziCmued-znlYnOoaSTc32muw8w80Zx-iiu3slAgMUH8cbTHE27xGoooLdnKWn3w-uojBkffZf8MAZNaI4XokEi8jy_6M8ow_5yb9heoKTXtHad1gCaPg&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawIcRgpleHRuA2FlbQIxMAABHXzoV6y57XjXxgoqEhAn0xRcW8z6prmbOU5Y1iLYRrH6L9vkk08MPEQqPA_aem_Ars4Fah451e_x6w5Bk8niw">
+                        <img src="./images/Whatsapp azul.svg" alt="">
+                    </a>
+                </span>
+                <span class="icon instagram">
+                    <a href="https://www.instagram.com/ferprobolivia/?hl=es">
+                        <img src="./images/Instagram azul.svg" alt="">
+                    </a>
+                </span>
+                <span class="icon facebook">
+                    <a href="https://www.facebook.com/Ferprobolivia">
+                        <img src="./images/Facebook azul.svg" alt="">
+                    </a>
+                </span>
+                <span class="icon location">
+                    <a href="https://www.google.com/maps/place/FERPRO+BOLIVIA/@-16.4985992,-68.142266,17z/data=!3m1!4b1!4m6!3m5!1s0x915f21821d214a49:0x2abf1b89a032e382!8m2!3d-16.4985992!4d-68.1396911!16s%2Fg%2F11flskx523?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="./images/Ubicación.svg" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú responsive móvil -->
+    <div class="mobile-header">
+        <span class="menu-toggle" id="menu-toggle">
+            <img src="./images/Menú.svg" alt="">
+        </span>
+        <div class="logo">
+            <img src="./images/Logo.svg" alt="">
+        </div>
+        <span class="search-toggle" id="search-toggle">
+            <img src="./images/Lupa blanca.svg" alt="">
+        </span>
+    </div>
+        <!-- Barra de búsqueda móvil (oculta inicialmente) -->
+<div class="mobile-search-bar" id="mobile-search-bar">
+    <input type="text" placeholder="Buscar..." id="mobile-search-input">
+    <span id="mobile-search-close" class="mobile-search-close">
+      <img src="./images/X blanco.svg" alt="Cerrar búsqueda">
+    </span>
+  </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <span class="close-menu" id="close-menu">
+            <img src="./images/X azul.svg" alt="">
+        </span>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contactanos.html">Contáctanos</a>
+            <a href="./carrito.html"><img src="./images/Carrito azul.svg" alt="">    Carrito de Compras</a>
+            <a href="./favoritos.html"><img src="./images/Corazon azul.svg" alt="">    Favoritos</a>
+            <a href="./perfil.html">Mi Cuenta</a>
+            <a href="./pedidos.html">Mis Pedidos</a>
+            <a href="./inicio_sesion.html">Cerrar Sesión</a>
+        </nav>
+        <a href="./inicio_sesion.html">
+            <button class="btn login-btn_2">Iniciar Sesión</button>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="breadcrumbs">
+        <nav>
+            <h3 class="breadcrumb-item"><a href="./index.html">&gt; Inicio</a></h3>
+            <h3 class="breadcrumb-item"><a href="./productos.html">&gt; Categorías de Productos</a></h3>
+            <h3 class="breadcrumb-item breadcrumb-active"><a href="">&gt; Herramientas de Corte</a></h3>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Contenedor principal -->
+    <div class="container">
+
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <h3 class="title">Precio</h3>
+            <div class="price-filter">
+                <input type="number" placeholder="Bs Min">
+                <input type="number" placeholder="Bs Max">
+                <button class="filter-button">Filtrar</button>
+            </div>
+    
+            <h3 class="title">Categorías de Herramientas</h3>
+            <nav class="categories">
+                <a href="./cat_1.html">Herramientas de Sujeción</a>
+                <a href="./cat_2.html">Herramientas de Mecánica</a>
+                <a href="./cat_3.html">Herramientas de Fijación</a>
+                <a href="./cat_4.html">Herramientas de Impacto</a>
+                <a href="./cat_5.html">Herramientas de Corte</a>
+                <a href="./cat_6.html">Herramientas de Acabado</a>
+                <a href="./cat_7.html">Herramientas de Plomería</a>
+                <a href="./cat_8.html">H. De Pintura y Albañilería </a>
+                <a href="./cat_9.html">E. De Protección Personal</a>
+                <a href="./cat_10.html">Herramientas de Medición</a>
+                <a href="./cat_11.html">Herramientas Eléctricas</a>
+                <a href="./cat_12.html">Herramientas Aisladas</a>
+                <a href="./cat_13.html">Herramientas de Soldadura</a>
+                <a href="./cat_14.html">Hardware y otros</a>
+                <a href="./cat_15.html">Herramientas de Automóvil</a>
+                <a href="./cat_16.html">Accesorios de H. Eléctricas</a>
+                <a href="./cat_17.html">Máquinas Eléctricas</a>
+                <a href="./cat_18.html">Generadores</a>
+                <a href="./cat_19.html">Herramientas de Iluminación</a>
+                <a href="./cat_20.html">Herramientas Neumáticas</a>
+                <a href="./cat_21.html">Herramientas de Jardinería</a>
+            </nav>
+        </aside>
+    
+        <!-- Contenido principal -->
+        <main class="content">
+            <h2 class="title">Herramientas de Corte</h2>
+            <div class="cards-container">
+                <!-- 9 Cards falsas con contenido editable -->
+                <div class="card">
+                    <a href="./cat_5_produc_1.html">
+                        <img src="./images/Herramientas de Corte/300625.jpg" alt="Alicate Pico de Loro" class="card-image">
+                        <h3 class="card-title">ESTILETE CUERPO ENGOMADO</h3>
+                        <p class="card-description">Código: 300625</p>
+                        <h3 class="card-price">Bs. 39.00</h3>
+                        <a href="#"><button class="card-button open-cart-modal">
+                            <span class="button-icon">Agregar</span>
+                            <img src="./images/Carrito blanco.svg" alt="">
+                        </button></a>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="./cat_5_produc_2.html">
+                        <img src="./images/Herramientas de Corte/300925.jpg" alt="Alicate Pico de Loro" class="card-image">
+                        <h3 class="card-title">HOJA DE ESTILETE (10PCS)</h3>
+                        <p class="card-description">Código: 300925</p>
+                        <h3 class="card-price">Bs. 31.00</h3>
+                        <a href="#"><button class="card-button open-cart-modal">
+                            <span class="button-icon">Agregar</span>
+                            <img src="./images/Carrito blanco.svg" alt="">
+                        </button></a> 
+                    </a>                   
+                </div>
+                <div class="card">
+                    <a href="./cat_5_produc_3.html">
+                        <img src="./images/Herramientas de Corte/301219.jpg" alt="Alicate Pico de Loro" class="card-image">
+                        <h3 class="card-title">ESTILETE DE CUERPO METALICO</h3>
+                        <p class="card-description">Código: 301219</p>
+                        <h3 class="card-price">Bs. 26.00</h3>
+                        <a href="#"><button class="card-button open-cart-modal">
+                            <span class="button-icon">Agregar</span>
+                            <img src="./images/Carrito blanco.svg" alt="">
+                        </button></a> 
+                    </a>                   
+                </div>
+                <div class="card">
+                    <a href="./cat_5_produc_4.html">
+                        <img src="./images/Herramientas de Corte/305112.jpg" alt="Alicate Pico de Loro" class="card-image">
+                        <h3 class="card-title">ARCO DE SIERRA MANGO PLASTICO</h3>
+                        <p class="card-description">Código: 305112</p>
+                        <h3 class="card-price">Bs. 28.00</h3>
+                        <a href="#"><button class="card-button open-cart-modal">
+                            <span class="button-icon">Agregar</span>
+                            <img src="./images/Carrito blanco.svg" alt="">
+                        </button></a> 
+                    </a>                   
+                </div>
+                <div class="card">
+                    <a href="./cat_5_produc_5.html">
+                        <img src="./images/Herramientas de Corte/305412.jpg" alt="Alicate Pico de Loro" class="card-image">
+                        <h3 class="card-title">ARCO DE SIERRA MANGO ENGOMADO REFORZADO</h3>
+                        <p class="card-description">Código: 305412</p>
+                        <h3 class="card-price">Bs. 81.00</h3>
+                        <a href="#"><button class="card-button open-cart-modal">
+                            <span class="button-icon">Agregar</span>
+                            <img src="./images/Carrito blanco.svg" alt="">
+                        </button></a> 
+                    </a>                   
+                </div>
+                <div class="card">
+                    <a href="./cat_5_produc_6.html">
+                        <img src="./images/Herramientas de Corte/305603.jpg" alt="Alicate Pico de Loro" class="card-image">
+                        <h3 class="card-title">HOJA DE SIERRA MECÁNICA PEQUEÑA</h3>
+                        <p class="card-description">Código: 305603</p>
+                        <h3 class="card-price">Bs. 23.00</h3>
+                        <a href="#"><button class="card-button open-cart-modal">
+                            <span class="button-icon">Agregar</span>
+                            <img src="./images/Carrito blanco.svg" alt="">
+                        </button></a> 
+                    </a>                   
+                </div>
+                <div class="card">
+                    <a href="./cat_5_produc_7.html">
+                        <img src="./images/Herramientas de Corte/310220.jpg" alt="Alicate Pico de Loro" class="card-image">
+                        <h3 class="card-title">SERRUCHO</h3>
+                        <p class="card-description">Código: 310216</p>
+                        <h3 class="card-price">Bs. 41.00</h3>
+                        <a href="#"><button class="card-button open-cart-modal">
+                            <span class="button-icon">Agregar</span>
+                            <img src="./images/Carrito blanco.svg" alt="">
+                        </button></a> 
+                    </a>                   
+                </div>
+
+                
+                <!-- Ventana emergente -->
+                <div class="modal" id="cart-modal">
+                    <div class="modal-content">
+                        <button class="close-modal" id="close-cart">
+                            <img src="./images/X blanco.svg" alt="">
+                        </button>
+                        <img src="./images/Correcto blanco.svg" alt="Carrito" class="modal-icon">
+                        <p>AÑADIDO AL CARRITO</p>
+                        <a href="./carrito.html"><button class="modal-button">Echar un vistazo</button></a>
+                    </div>
+                </div>
+        </main>
+    
+        <!-- Icono menú móvil -->
+        <div class="mobile-menu-icon" onclick="toggleSidebar()">
+            <img src="./images/Barra lateral.svg" alt="">
+        </div>
+    
+        <!-- Barra lateral móvil -->
+        <aside class="mobile-sidebar">
+            <div class="close-icon" onclick="toggleSidebar()"><img src="./images/X azul.svg" alt=""></div>
+            <h3 class="title">Precio</h3>
+            <div class="price-filter">
+                <input type="number" placeholder="Bs Min">
+                <input type="number" placeholder="Bs Max">
+                <button class="filter-button">Filtrar</button>
+            </div>
+    
+            <h3 class="title">Categorías de Herramientas</h3>
+            <nav class="categories">
+                <a href="./cat_1.html"><h3>Herramientas de Sujeción</h3></a>
+                <a href="./cat_2.html"><h3>Herramientas de Mecánica</h3></a>
+                <a href="./cat_3.html"><h3>Herramientas de Fijación</h3></a>
+                <a href="./cat_4.html"><h3>Herramientas de Impacto</h3></a>
+                <a href="./cat_5.html"><h3>Herramientas de Corte</h3></a>
+                <a href="./cat_6.html"><h3>Herramientas de Acabado</h3></a>
+                <a href="./cat_7.html"><h3>Herramientas de Plomería</h3></a>
+                <a href="./cat_8.html"><h3>H. De Pintura y Albañilería</h3></a>
+                <a href="./cat_9.html"><h3>E. De Protección Personal</h3></a>
+                <a href="./cat_10.html"><h3>Herramientas de Medición</h3></a>
+                <a href="./cat_11.html"><h3>Herramientas Eléctricas</h3></a>
+                <a href="./cat_12.html"><h3>Herramientas Aisladas</h3></a>
+                <a href="./cat_13.html"><h3>Herramientas de Soldadura</h3></a>
+                <a href="./cat_14.html"><h3>Hardware y otros</h3></a>
+                <a href="./cat_15.html"><h3>Herramientas de Automóvil</h3></a>
+                <a href="./cat_16.html"><h3>Accesorios de H. Eléctricas</h3></a>
+                <a href="./cat_17.html"><h3>Máquinas Eléctricas</h3></a>
+                <a href="./cat_18.html"><h3>Generadores</h3></a>
+                <a href="./cat_19.html"><h3>Herramientas de Iluminación</h3></a>
+                <a href="./cat_20.html"><h3>Herramientas Neumáticas</h3></a>
+                <a href="./cat_21.html"><h3>Herramientas de Jardinería</h3></a>
+            </nav>
+        </aside>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Columna 1: Logo -->
+            <div class="footer-column footer-logo">
+                <div class="logo"><img src="./images/Logo.svg" alt=""></div>
+            </div>
+    
+            <!-- Columna 2: Dirección -->
+            <div class="footer-column">
+                <h3>DIRECCIÓN - LA PAZ - BOLIVIA</h3>
+                <a href="https://www.google.com/maps/place/FERPRO+BOLIVIA/@-16.4985992,-68.142266,17z/data=!3m1!4b1!4m6!3m5!1s0x915f21821d214a49:0x2abf1b89a032e382!8m2!3d-16.4985992!4d-68.1396911!16s%2Fg%2F11flskx523?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">Isaac Tamayo, esquina Sagarnaga N° 440.</a>
+                <a href="https://www.google.com/maps/place/FERPRO+SUC+CALACOTO/@-16.5386615,-68.0759644,17z/data=!3m1!4b1!4m6!3m5!1s0x915f2195cca8ccc1:0x597733fa149b222c!8m2!3d-16.5386615!4d-68.0733895!16s%2Fg%2F11w3ms8crt?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D">Calle Prolongación Ballivián entre 24 y 25 de Calacoto N° 1780.</a>
+            </div>
+    
+            <!-- Columna 3: Horarios -->
+            <div class="footer-column">
+                <h3>HORARIOS DE ATENCIÓN</h3>
+                <p>Lunes a Viernes: 07:00am - 19:00pm</p>
+                <p>Sábados: 07:00am - 17:00pm</p>
+                <p>Domingos: Cerrado</p>
+            </div>
+    
+            <!-- Columna 4: Redes sociales -->
+            <div class="footer-column">
+                <h3>ENCUÉNTRANOS EN</h3>
+                <div class="social-icons_footer">
+                    <a href="https://www.instagram.com/ferprobolivia/?hl=es" class="icon">
+                        <img src="./images/Instagram blanco.svg" alt="">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=%2B59175855677&context=ARBpb9Xwp5_bV6Y7t1YTJjxB5lqlfi8gEa_mHw11ySIlVI69ozgwRi2NKFpZHTrGMxisqIkyBixEijRYkP3wj9uF3qHSeO7Kz04pJANsrE6zKieKfxv9U9HMlUs4GuEjPoetBd12Ycoo0je412B1BrV6_g&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawIcUDVleHRuA2FlbQIxMAABHWlhMhRQLdx8C7kH-u3Sf6DwNXk9rf34yClDsjSOQ0j47mqMRdPVyBW9VQ_aem_BHcYx3rsX6bW71CE2FB8Kw" class="icon"><img src="./images/Whatsapp blanco.svg" alt=""></a>
+                    <a href="https://www.facebook.com/Ferprobolivia" class="icon"><img src="./images/Facebook blanco.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+<section>
+    <!-- BOTÓN FLOTANTE FIJO (SCROLL TOP) -->
+    <div class="boton_regreso" id="botonRegreso">
+        <img src="./images/flecha_arriba.svg" alt="Icono de regreso" class="boton_regreso-icono">
+    </div>
+</section>
+
+
+
+<script src="./scripts/cat_1.js"></script>
+</body>
+</html>
